@@ -11,9 +11,9 @@
         A VPS with linux kernel
     </li>
     <li>
-        NBPF Compiler <a href="//requirements/">Click here to download the file</a>
+        NBPF Compiler <a href="https://github.com/oaui/BPF-Berkeley-Filter/blob/main/BPF%20docu/requirements/nbpf_compile.c">Click here to download the file</a>
     </li>
     <li>
-        [link](/requirements/setup.md)
+        <a href="https://github.com/oaui/BPF-Berkeley-Filter/blob/main/BPF%20docu/requirements/setup.md">VPS Setup</a>
     </li>
 </ul>
