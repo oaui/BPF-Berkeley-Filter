@@ -1,5 +1,9 @@
 BPF documentation:
 
+This belongs to oaui (me) and only me. It simplyfies the use of BPF enormously.
+
+Please keep this in mind and credit me, as I am sharing this with you for research and eductional purposes.
+
 urgent pointer:			  tcp[18] VALUE
 packets with options: 	  ip[0] & 0xf = 5
 select TCP RST: 		  tcp[13] & 4
@@ -14,7 +18,3 @@ select SYN packets only:  tcp[13] & 2 != 0
 tcp acknowledgement num:  tcp[9] = 0
 tcp sequence num: 	      tcp[4:4] VALUE
 tcp window selected with: tcp[14:2] VALUE
-
-//To use c BPF filter
-apt-get install build-essential net-tools wireshark tshark tcpdump gcc dstat htop nload ipset libcurl4-openssl-dev libssl-dev zlib1g-dev libpcap-dev -y
-gcc nbpf_compile.c -o nbpf_compile -lpcap
