@@ -1,0 +1,20 @@
+BPF documentation:
+
+urgent pointer:			  tcp[18] VALUE
+packets with options: 	  ip[0] & 0xf = 5
+select TCP RST: 		  tcp[13] & 4
+select TCP PSH: 		  tcp[13] & 8
+select TCP ACK: 		  tcp[13] & 16 = 0
+select TCP URG: 		  tcp[13] & 32
+drop fragmented packets:  ip[6:2] & 0x1fff = 0
+ip TTL value: 		      ip[8] < VALUE
+packet header length : 	  ip[2:2] VALUE
+TCP or UDP protocol:	  ip[9] =
+select SYN packets only:  tcp[13] & 2 != 0
+tcp acknowledgement num:  tcp[9] = 0
+tcp sequence num: 	      tcp[4:4] VALUE
+tcp window selected with: tcp[14:2] VALUE
+
+//To use c BPF filter
+apt-get install build-essential net-tools wireshark tshark tcpdump gcc dstat htop nload ipset libcurl4-openssl-dev libssl-dev zlib1g-dev libpcap-dev -y
+gcc nbpf_compile.c -o nbpf_compile -lpcap
