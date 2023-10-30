@@ -11,7 +11,7 @@
         A VPS with linux kernel
     </li>
     <li>
-        NBPF Compiler <a href="/requirements/">Click here to download the file</a>
+        NBPF Compiler <a href="//requirements/">Click here to download the file</a>
     </li>
     <li>
         <a href="/requirements/setup.md">Server setup and file compilation</a>
