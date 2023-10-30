@@ -14,6 +14,6 @@
         NBPF Compiler <a href="//requirements/">Click here to download the file</a>
     </li>
     <li>
-        <a href="/requirements/setup.md">Server setup and file compilation</a>
+        [link](/requirements/setup.md)
     </li>
 </ul>
